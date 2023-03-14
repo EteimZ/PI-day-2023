@@ -4,7 +4,11 @@ This repo contains scripts for generating digits of `PI` using the [monte carlo 
 
 ## Usage 
 
-The repo contains two scripts, one for calculating PI using python's [random](https://docs.python.org/3/library/random.html) module without any external dependencies. 
+The repo contains two scripts
+- main.py
+- vis.py
+
+main.py is used for calculating PI using python's [random](https://docs.python.org/3/library/random.html) module without any external dependencies. 
 
 Run the script and provide an integer argument to the script. The higher the integer the more accurate your result of `PI` will be.     
 
@@ -12,7 +16,7 @@ Run the script and provide an integer argument to the script. The higher the int
 python main.py 10000
 ```
 
-The second gives a visualization of the entire `PI` calculation process using [turtle](https://docs.python.org/3/library/turtle.html). It is significantly slower than the first so avoid giving it large digits. 
+vis.py gives a visualization of the entire `PI` calculation process using [turtle](https://docs.python.org/3/library/turtle.html). It is significantly slower than the first so avoid giving it large digits. 
 
 It also requires external dependencies to work which are contained in the `requirements.txt` file. It uses [imageio](https://imageio.readthedocs.io/en/stable/index.html) to save create a video of the entire process. [FFMPEG](https://ffmpeg.org/) has to be installed in the host OS for the program to work.
 
